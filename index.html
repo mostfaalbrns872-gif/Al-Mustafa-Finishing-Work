@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شركة المصطفى للتطوير العقاري | تشطيبات وديكور</title>
+<meta name="description" content="شركة المصطفى للتشطيبات والديكور - تشطيب كامل، ديكور، جبس بورد، دهانات، كهرباء وسباكة بأعلى جودة وأفضل الأسعار.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#c9a24b; --gold2:#e3c070; --dark:#151515; --dark2:#1f1f1f; --light:#f7f4ee; --text:#333;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',sans-serif;background:var(--light);color:var(--text);line-height:1.8}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* ===== Header ===== */
+header{position:fixed;top:0;right:0;left:0;z-index:100;background:rgba(21,21,21,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,162,75,.35)}
+.navbar{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:auto;padding:14px 24px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#151515;font-size:20px}
+.logo-text{color:#fff;font-weight:800;font-size:18px;line-height:1.2}
+.logo-text small{display:block;color:var(--gold);font-weight:600;font-size:12px}
+nav ul{display:flex;list-style:none;gap:26px}
+nav a{color:#eee;font-weight:600;font-size:15px;transition:.3s}
+nav a:hover{color:var(--gold)}
+.cta{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#151515;font-weight:800;padding:10px 22px;border-radius:30px;transition:.3s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(201,162,75,.4)}
+.menu-toggle{display:none;color:#fff;font-size:26px;background:none;border:none;cursor:pointer}
+
+/* ===== Hero ===== */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;background:linear-gradient(rgba(15,15,15,.78),rgba(15,15,15,.82)),url('images/hero.jpg') center/cover no-repeat;padding:120px 24px 80px}
+.hero-inner{max-width:1200px;margin:auto;width:100%;color:#fff}
+.hero-inner h1{font-size:clamp(32px,5.5vw,60px);font-weight:900;line-height:1.35}
+.hero-inner h1 span{color:var(--gold)}
+.hero-inner p{margin:20px 0 34px;font-size:clamp(16px,2vw,20px);color:#ddd;max-width:640px}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 34px;border-radius:32px;font-weight:800;font-size:16px;transition:.3s}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#151515}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(201,162,75,.45)}
+.btn-outline{border:2px solid var(--gold);color:var(--gold)}
+.btn-outline:hover{background:var(--gold);color:#151515}
+.hero-stats{display:flex;gap:40px;margin-top:60px;flex-wrap:wrap}
+.stat .num{font-size:clamp(28px,4vw,44px);font-weight:900;color:var(--gold)}
+.stat .lbl{color:#ccc;font-size:14px}
+
+/* ===== Sections ===== */
+section{padding:90px 24px}
+.container{max-width:1200px;margin:auto}
+.sec-head{text-align:center;margin-bottom:56px}
+.sec-head .tag{color:var(--gold);font-weight:700;letter-spacing:1px}
+.sec-head h2{font-size:clamp(26px,3.6vw,40px);font-weight:900;color:var(--dark);margin-top:6px}
+.sec-head .line{width:70px;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold2));margin:14px auto 0;border-radius:4px}
+
+/* ===== Services ===== */
+#services{background:#fff}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:24px}
+.service{background:var(--light);border:1px solid #eee;border-radius:16px;padding:32px 24px;text-align:center;transition:.35s}
+.service:hover{transform:translateY(-8px);box-shadow:0 15px 35px rgba(0,0,0,.1);border-color:var(--gold)}
+.service .icon{width:66px;height:66px;margin:0 auto 16px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:30px}
+.service h3{color:var(--dark);font-size:19px;margin-bottom:8px}
+.service p{font-size:14.5px;color:#666}
+
+/* ===== About ===== */
+#about{background:var(--dark);color:#eee}
+.about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-wrap img{border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.about-wrap h2{font-size:clamp(24px,3vw,36px);font-weight:900;margin-bottom:16px}
+.about-wrap h2 span{color:var(--gold)}
+.about-wrap p{color:#bbb;margin-bottom:14px}
+.about-list{list-style:none;margin-top:20px}
+.about-list li{padding:8px 0;display:flex;gap:10px;align-items:center;color:#ddd}
+.about-list li::before{content:"✔";color:var(--gold);font-weight:900}
+
+/* ===== Gallery ===== */
+#gallery{background:var(--light)}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.gallery-grid figure{position:relative;border-radius:14px;overflow:hidden;cursor:pointer}
+.gallery-grid img{height:250px;width:100%;object-fit:cover;transition:.5s}
+.gallery-grid figure:hover img{transform:scale(1.08)}
+.gallery-grid figcaption{position:absolute;bottom:0;right:0;left:0;padding:28px 18px 14px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font-weight:700}
+
+/* ===== Why us ===== */
+#why{background:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.why-card{text-align:center;padding:34px 20px;border-radius:16px;background:var(--light);border-top:4px solid var(--gold)}
+.why-card .num{font-size:40px;font-weight:900;color:var(--gold)}
+.why-card h3{margin:10px 0 6px;color:var(--dark)}
+
+/* ===== Contact ===== */
+#contact{background:linear-gradient(rgba(21,21,21,.93),rgba(21,21,21,.93)),url('images/gallery3.jpg') center/cover fixed;color:#eee}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact-info h2{font-size:clamp(24px,3vw,34px);font-weight:900;margin-bottom:18px}
+.contact-info h2 span{color:var(--gold)}
+.contact-info p{color:#bbb;margin-bottom:22px}
+.c-item{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.c-item .ic{width:46px;height:46px;flex:0 0 46px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px}
+form{background:rgba(255,255,255,.05);border:1px solid rgba(201,162,75,.3);border-radius:18px;padding:30px}
+form input,form textarea{width:100%;margin-bottom:14px;padding:13px 16px;border-radius:10px;border:1px solid #444;background:#1c1c1c;color:#fff;font-family:inherit;font-size:15px}
+form input:focus,form textarea:focus{outline:none;border-color:var(--gold)}
+form button{width:100%;padding:14px;border:none;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#151515;font-weight:900;font-size:16px;cursor:pointer;font-family:inherit}
+form button:hover{opacity:.9}
+
+/* ===== WhatsApp float ===== */
+.wa-float{position:fixed;bottom:24px;left:24px;z-index:99;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.3);transition:.3s}
+.wa-float:hover{transform:scale(1.1)}
+
+/* ===== Footer ===== */
+footer{background:#0e0e0e;color:#999;padding:40px 24px 24px;text-align:center}
+footer .logo-text{margin-bottom:10px}
+.social{display:flex;justify-content:center;gap:14px;margin:16px 0}
+.social a{width:40px;height:40px;border:1px solid #333;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:.3s}
+.social a:hover{border-color:var(--gold);color:var(--gold)}
+.copy{border-top:1px solid #222;margin-top:20px;padding-top:16px;font-size:13px}
+
+@media(max-width:860px){
+  nav ul{position:fixed;top:72px;right:0;left:0;background:#151515;flex-direction:column;align-items:center;gap:0;padding:0;max-height:0;overflow:hidden;transition:.4s}
+  nav ul.open{max-height:400px;padding:10px 0}
+  nav ul li{padding:12px 0}
+  .menu-toggle{display:block}
+  .about-wrap,.contact-grid{grid-template-columns:1fr}
+  .navbar .cta{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-icon">م</span>
+      <span class="logo-text">المصطفى<small>للتشطيبات والديكور</small></span>
+    </a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#gallery">أعمالنا</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="tel:+201125203173">اتصل الآن</a>
+    <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <h1>نحوّل رؤيتك <span>إلى واقع</span><br>شركة المصطفى للتطوير العقاري</h1>
+    <p>تشطيبات متكاملة بأعلى جودة وأحدث التصميمات — ديكورات وجبس بورد، دهانات داخلية وخارجية، أرضيات وسيراميك ورخام، مطابخ حديثة وحمامات كاملة، مع إشراف هندسي متكامل على التنفيذ.</p>
+    <p style="margin-top:-14px">💳 <strong style="color:var(--gold)">شطب شقتك كاش أو قسط</strong> واختار النظام المناسب ليك.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-gold">اطلب معاينة مجانية</a>
+      <a href="#gallery" class="btn btn-outline">شاهد أعمالنا</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num" data-count="10">0</div><div class="lbl">+ سنوات خبرة</div></div>
+      <div class="stat"><div class="num" data-count="250">0</div><div class="lbl">+ مشروع منجز</div></div>
+      <div class="stat"><div class="num" data-count="98">0</div><div class="lbl">% رضا العملاء</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head">
+      <div class="tag">خدماتنا</div>
+      <h2>كل ما يحتاجه مشروعك في مكان واحد</h2>
+      <div class="line"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service"><div class="icon">✨</div><h3>ديكورات وجبس بورد</h3><p>ديكورات عصرية وجبس بورد بتصميمات مودرن وكلاسيك بدقة تنفيذ عالية.</p></div>
+      <div class="service"><div class="icon">🎨</div><h3>دهانات داخلية وخارجية</h3><p>دهانات عالية الجودة بأحدث الألوان والتشطيبات الداخلية والخارجية.</p></div>
+      <div class="service"><div class="icon">🧱</div><h3>أرضيات وسيراميك ورخام</h3><p>تركيب سيراميك، بورسلين ورخام بإتقان وجودة تدوم.</p></div>
+      <div class="service"><div class="icon">🍳</div><h3>مطابخ حديثة</h3><p>تصميم وتنفيذ مطابخ حديثة بأحدث الخامات والتقنيات.</p></div>
+      <div class="service"><div class="icon">🚿</div><h3>حمامات كاملة</h3><p>تشطيب حمامات كاملة بخامات عالية وضمان حقيقي.</p></div>
+      <div class="service"><div class="icon">👷</div><h3>إشراف هندسي متكامل</h3><p>مهندسون متخصصون يشرفون على كل مرحلة من التنفيذ حتى التسليم.</p></div>
+      <div class="service"><div class="icon">🏠</div><h3>تشطيب متكامل</h3><p>تشطيبات متكاملة بأعلى جودة وأحدث التصميمات من الألف إلى الياء.</p></div>
+      <div class="service"><div class="icon">💳</div><h3>كاش أو قسط</h3><p>شطب شقتك كاش أو قسط — تسهيلات في السداد تناسب ميزانيتك.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container about-wrap">
+    <img src="images/gallery3.jpg" alt="تشطيبات فاخرة">
+    <div>
+      <h2>من نحن؟ <span>المصطفى للتطوير العقاري</span></h2>
+      <p>شركة متخصصة في أعمال التشطيبات والديكور الداخلي والخارجي، نسعى لتقديم جودة استثنائية وذوق راقٍ يلبي تطلعات عملائنا في منازلهم ومقرات أعمالهم.</p>
+      <p>نحرص على استخدام أفضل الخامات، والالتزام بالمواعيد، والتنفيذ بدقة وبأفضل سعر في السوق.</p>
+      <ul class="about-list">
+        <li>فريق عمل محترف ومدرب بخبرة سنوات طويلة</li>
+        <li>ضمان حقيقي على جميع أعمال التنفيذ</li>
+        <li>التزام كامل بالمواعيد المتفق عليها</li>
+        <li>أسعار تنافسية وتسهيلات في السداد (كاش أو قسط)</li>
+        <li>معاينة وتسعير مجاني</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery">
+  <div class="container">
+    <div class="sec-head">
+      <div class="tag">معرض الأعمال</div>
+      <h2>نماذج من مشاريعنا</h2>
+      <div class="line"></div>
+    </div>
+    <div class="gallery-grid">
+      <figure><img src="images/gallery1.jpg" alt="ريسبشن مودرن"><figcaption>ريسبشن — تصميم مودرن فاخر</figcaption></figure>
+      <figure><img src="images/gallery2.jpg" alt="تشطيب مطبخ"><figcaption>مطبخ — تشطيب كامل</figcaption></figure>
+      <figure><img src="images/gallery3.jpg" alt="ديكور كلاسيك"><figcaption>صالة — ديكور كلاسيك ملكي</figcaption></figure>
+      <figure><img src="images/gallery4.jpg" alt="ريسبشن نيو كلاسيك"><figcaption>ريسبشن — نيو كلاسيك هادئ</figcaption></figure>
+      <figure><img src="images/gallery5.jpg" alt="مخطط معماري"><figcaption>تصميم وتخطيط معماري</figcaption></figure>
+      <figure><img src="images/hero.jpg" alt="أعمال تشطيب"><figcaption>أعمال تشطيب وترميم</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY ================= -->
+<section id="why">
+  <div class="container">
+    <div class="sec-head">
+      <div class="tag">لماذا نحن؟</div>
+      <h2>اختلافنا في التفاصيل</h2>
+      <div class="line"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="num">01</div><h3>خامات أصلية</h3><p>نتعامل مع كبرى الموردين ونلتزم باستخدام خامات معتمدة.</p></div>
+      <div class="why-card"><div class="num">02</div><h3>إشراف هندسي كامل</h3><p>مهندسون متخصصون يشرفون على كل مرحلة من التنفيذ.</p></div>
+      <div class="why-card"><div class="num">03</div><h3>كاش أو قسط</h3><p>شطب شقتك كاش أو قسط واختار النظام المناسب ليك.</p></div>
+      <div class="why-card"><div class="num">04</div><h3>ضمان مكتوب</h3><p>ضمان حقيقي وموثق على جميع أعمال التشطيب.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h2>تواصل معنا <span>واحجز معاينتك المجانية</span></h2>
+      <p>فريقنا جاهز للرد على استفساراتك وتحديد موعد معاينة مجانية لمشروعك.</p>
+      <div class="c-item"><div class="ic">📞</div><div><strong>للتواصل والاستفسار</strong><br><a href="tel:+201125203173" dir="ltr">01125203173</a> — <a href="tel:+201148113116" dir="ltr">01148113116</a></div></div>
+      <div class="c-item"><div class="ic">💬</div><div><strong>واتساب</strong><br><a href="https://wa.me/201125203173" dir="ltr">01125203173</a> — ابعتلنا رسالة واعرف تفاصيل التشطيب المناسبة لشقتك</div></div>
+      <div class="c-item"><div class="ic">📍</div><div><strong>العنوان</strong><br>تقاطع شارع عباس العقاد مع شارع مصطفى النحاس — مدينة نصر، القاهرة</div></div>
+      <div class="c-item"><div class="ic">📘</div><div><strong>فيسبوك</strong><br><a href="https://www.facebook.com/profile.php?id=61559310301639" target="_blank">تابعنا على صفحة الشركة</a></div></div>
+    </div>
+    <form onsubmit="event.preventDefault();alert('شكراً لتواصلك! سنتواصل معك قريباً.');">
+      <input type="text" placeholder="الاسم بالكامل" required>
+      <input type="tel" placeholder="رقم الهاتف" required>
+      <input type="text" placeholder="نوع المشروع (شقة / فيلا / مكتب...)">
+      <textarea rows="4" placeholder="اكتب تفاصيل طلبك هنا..."></textarea>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= WHATSAPP ================= -->
+<a class="wa-float" href="https://wa.me/201125203173" target="_blank" aria-label="واتساب">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <span class="logo-text">المصطفى <small>للتطوير العقاري — للتشطيبات والديكور</small></span>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=61559310301639" target="_blank" title="فيسبوك">f</a>
+      <a href="https://wa.me/201125203173" target="_blank" title="واتساب">w</a>
+      <a href="#" title="إنستغرام">ig</a>
+    </div>
+    <div class="copy">© 2026 شركة المصطفى للتطوير العقاري — جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+
+<script>
+// عدّاد الأرقام
+const counters = document.querySelectorAll('[data-count]');
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const el=e.target, end=+el.dataset.count; let cur=0;
+      const step=Math.max(1,Math.ceil(end/60));
+      const t=setInterval(()=>{cur+=step; if(cur>=end){cur=end;clearInterval(t);} el.textContent=cur;},25);
+      obs.unobserve(el);
+    }
+  });
+},{threshold:.6});
+counters.forEach(c=>obs.observe(c));
+
+// إغلاق القائمة عند الضغط على رابط
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>document.getElementById('menu').classList.remove('open'));
+</script>
+</body>
+</html>
